@@ -1,3 +1,145 @@
-h1{
-    color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* shared sttyles  */
+
+.btn-content{
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: rgb(255, 89, 89);
+    font-weight: 500;
+    padding: 0.75rem;
+    cursor: pointer;
+    
+}
+.orange{
+    color: rgb(255, 173, 90);
+    
+}
+.dimgrey{
+    color:rgb(62, 62, 62);
+    font-size: 1.15rem;
+}
+
+
+/* header styles */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header div{
+    width: 50%;
+}
+.header-img img{
+    width: 100%;
+}
+
+.header-title{
+    font-size: 3.75rem;
+}
+
+/* header styles end  */
+
+
+/* main section start here  */
+main{
+    margin-top: 4rem;
+}
+
+
+/* my-mission-section */
+
+.my-mission > h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.mission-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}  
+.mission-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 22rem;
+}
+.mission-content p{
+    padding: 0 2rem 2rem 2rem;
+    text-align: justify;
+}
+.mission-content img{
+    width: 50%;
+}
+
+.mission-container h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* backgound-color  */
+.mission{
+    background-color: rgba(79, 157, 166, 0.1);
+    border-radius: 1.5rem;
+}
+.vission{
+    background-color: rgba(255, 89, 89, 0.1);
+    border-radius: 1.5rem;
+}
+.goals{
+    background-color: rgb(255, 244, 214);
+    border-radius: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive for small devices  */
+@media screen and (max-width:576px) {
+    body{
+        margin: 0 1rem;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .header div{
+        width: 100%;
+    }
+    
 }
