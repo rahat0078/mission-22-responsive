@@ -83,7 +83,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    width: 22rem;
+    max-width: 22rem;
 }
 .mission-content p{
     padding: 0 2rem 2rem 2rem;
@@ -135,11 +135,12 @@ main{
     body{
         margin: 0 1rem;
     }
-    .header{
+    .header, .mission-container{
         flex-direction: column;
     }
     .header div{
-        width: 100%;
+        width: calc(100% - 2rem);
     }
+
     
 }
